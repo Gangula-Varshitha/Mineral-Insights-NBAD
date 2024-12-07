@@ -1,0 +1,43 @@
+<div class="login-card" role="main">
+  <h2 id="login-title">{{ displayedTextLogin }}</h2>
+  <form (ngSubmit)="onLogin()" aria-labelledby="login-title">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        aria-required="true"
+        aria-label="Enter your email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+        aria-required="true"
+        aria-label="Enter your password"
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="submit-button"
+      aria-label="Login button"
+    >
+      Login
+    </button>
+
+    <p class="signup-link">
+      Don't have an account?
+      <a routerLink="/signup" aria-label="Navigate to signup page">Sign up here</a>
+    </p>
+  </form>
+</div>

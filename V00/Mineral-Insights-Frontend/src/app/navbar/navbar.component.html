@@ -1,0 +1,31 @@
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="navbar-brand" id="navbar-title">{{ displayedTextProject }}</div>
+  <ul class="navbar-links" role="menubar">
+    <!-- Protected Links -->
+    <li role="menuitem" tabindex="0" (click)="navigateIfLoggedIn('/dashboard')">
+      Dashboard
+    </li>
+    <li role="menuitem" tabindex="0" (click)="navigateIfLoggedIn('/summary')">
+      Summary
+    </li>
+    <li role="menuitem" tabindex="0" (click)="navigateIfLoggedIn('/reports')">
+      Reports
+    </li>
+
+    <!-- Conditional Links -->
+    <li
+      *ngIf="isLoggedIn"
+      role="menuitem"
+      tabindex="0"
+      (click)="onLogout()"
+    >
+      Logout
+    </li>
+    <li *ngIf="!isLoggedIn">
+      <a routerLink="/login" role="menuitem" tabindex="0">Login</a>
+    </li>
+    <li *ngIf="!isLoggedIn">
+      <a routerLink="/signup" role="menuitem" tabindex="0">Signup</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #673ab7;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  color: white;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover,
+.navbar-links li:hover {
+  text-decoration: underline;
+}
+
+/* Accessibility enhancements */
+.navbar-links a:focus,
+.navbar-links li:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Ensure sufficient focus visibility for keyboard navigation */
+.navbar li {
+  position: relative;
+}
+
+.navbar li:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

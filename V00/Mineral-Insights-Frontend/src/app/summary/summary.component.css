@@ -1,0 +1,16 @@
+.summary-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Ensure the canvas is responsive */
+.chart-wrapper canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus outline for accessibility */
+.chart-wrapper:focus-within {
+  outline: 2px solid #007bff;
+  outline-offset: 4px;
+}

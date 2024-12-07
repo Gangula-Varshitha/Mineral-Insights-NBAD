@@ -1,0 +1,45 @@
+<div class="chart-container">
+
+  <!-- Stacked Bar Chart -->
+  <div class="stacked-bar-chart">
+    <h3>Bauxite Production Trends (Stacked by Country, Over Years)</h3>
+    <p>
+      This stacked bar chart visualizes the bauxite production trends for the leading countries over the years.
+      Each bar represents a specific year, with the proportions contributed by individual countries stacked on top of each other.
+      This provides a clear picture of how the production shares have evolved, highlighting key players in the global bauxite market.
+    </p>
+    <canvas id="bauxiteStackedBarChart"></canvas>
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="pie-chart">
+    <h3>Global Bauxite Reserves (2023)</h3>
+    <p>
+      The pie chart showcases the percentage contribution of leading countries to the global bauxite reserves in 2023.
+      This visualization emphasizes the dominance of certain nations in the global bauxite industry, crucial for aluminum production.
+    </p>
+    <canvas id="bauxitePieChart"></canvas>
+  </div>
+
+  <!-- Select Country and Display Details -->
+  <div class="country-details">
+    <h3>Country Details</h3>
+    <label for="country-select"><strong>Select Country:</strong></label>
+    <select
+      id="country-select"
+      [(ngModel)]="selectedCountry"
+      (change)="updateSelectedCountryDetails()"
+    >
+      <!-- Display only predefined countries -->
+      <option *ngFor="let country of countries" [value]="country.name">
+        {{ country.name }}
+      </option>
+    </select>
+
+    <div *ngIf="selectedCountryDetails">
+      <p><strong>Country:</strong> {{ selectedCountryDetails.name }}</p>
+      <p><strong>Percentage:</strong> {{ selectedCountryDetails.value }}%</p>
+    </div>
+  </div>
+
+</div>

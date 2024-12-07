@@ -1,0 +1,95 @@
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .login-card, .signup-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .signup-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  /* Ensure sufficient contrast for headings */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #673ab7; /* Maintain contrast for accessibility */
+  }
+  
+  /* Label styling for clear visibility */
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields styling */
+  .form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Focus styles for keyboard navigation */
+  .form-group input:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .submit-button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+  }
+  
+  /* Link styling */
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .login-link a {
+    text-decoration: underline;
+  }
+  
+  .login-link a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  

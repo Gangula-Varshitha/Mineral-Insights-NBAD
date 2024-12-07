@@ -1,0 +1,51 @@
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.pie-chart, .stacked-bar-chart {
+  width: 48%;
+}
+
+.country-details {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.country-details h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.country-details p {
+  margin: 5px 0;
+}
+
+.stacked-bar-chart {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+canvas {
+  width: 100% !important; /* Ensure canvas takes up full width */
+  height: 100% !important; /* Ensure canvas takes up full height */
+}

@@ -1,0 +1,54 @@
+<div class="dashboard-container" role="main">
+  <!-- Header Section -->
+  <header class="header" role="banner" aria-labelledby="welcome-header">
+    <h1 id="welcome-header">Welcome to Mineral Insights</h1>
+    <p aria-live="polite">Welcome back, {{ userName }}!</p>
+  </header>
+
+  <!-- Content Section -->
+  <section class="content" aria-labelledby="content-header">
+    <h2 id="content-header">Mineral Insights</h2>
+    <p>
+      The global shift towards clean energy is driving an unprecedented demand for critical minerals. These minerals, such as lithium, cobalt, and rare earth elements, are essential for producing technologies like electric vehicles, wind turbines, and solar panels. Countries worldwide are racing to secure these resources to transition away from fossil fuels and meet their climate goals. The article highlights the geographical distribution of critical mineral production and emphasizes the need for international cooperation to ensure sustainable mining practices and equitable resource allocation.
+    </p>
+    <p>
+      China dominates the global production of minerals such as rare earth elements and lithium, which are crucial for batteries and renewable energy systems. Meanwhile, Australia and Chile lead in lithium extraction, and the Democratic Republic of Congo accounts for over two-thirds of the world’s cobalt supply. This uneven distribution of resources poses challenges for energy security and underscores the importance of diversifying supply chains.
+    </p>
+    <p>
+      Sustainability is also a key focus. The extraction and processing of these minerals have significant environmental and social implications. Ensuring ethical mining practices, recycling critical minerals, and reducing dependency through innovation are vital for achieving a green transition. This project visualizes global production data and highlights the countries leading the supply chain for critical minerals essential for the energy transition.
+    </p>
+    <p>
+      Reference:
+      <a
+        href="https://ourworldindata.org/countries-critical-minerals-needed-energy-transition"
+        target="_blank">Critical Minerals Needed for the Energy Transition - Our World in Data</a
+      >
+    </p>
+  </section>
+
+  <!-- Technical Details Section -->
+  <section class="technical-details" aria-labelledby="tech-header">
+    <h3 id="tech-header">Technical Details and Infrastructure</h3>
+    <p>
+      This project is a full-stack web application built using Angular for the frontend and Node.js with Express.js for the backend. MongoDB is used as the database to store and query critical mineral production data. The application features interactive charts and visualizations, fetching data dynamically via RESTful APIs. It is designed as a Single Page Application (SPA) and ensures robust performance with JWT-based authentication and compression for optimized data transfer.
+    </p>
+  </section>
+
+  <!-- Navigation Section -->
+  <nav class="navigation" aria-label="Page Navigation">
+    <button
+      class="nav-btn"
+      routerLink="/summary"
+      aria-label="Go to the Summary page"
+    >
+      Go to Summary
+    </button>
+    <button
+      class="nav-btn"
+      routerLink="/reports"
+      aria-label="Go to the Reports page"
+    >
+      Go to Reports
+    </button>
+  </nav>
+</div>

@@ -1,0 +1,79 @@
+/* General container styling */
+.login-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure sufficient text contrast */
+h2,
+.form-group label,
+.signup-link a {
+  color: #333; /* Adjusted for better contrast */
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button.submit-button {
+  background-color: #673ab7;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #5e35b1;
+}
+
+button.submit-button:focus {
+  outline: 2px solid #333;
+  outline-offset: 3px;
+}
+
+.signup-link a:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 3px;
+}
+
+/* Accessibility for visually impaired users */
+.signup-link a {
+  text-decoration: underline;
+}
+
+.signup-link a:hover {
+  color: #0056b3;
+}
+
+
+
+
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
